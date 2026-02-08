@@ -1,0 +1,29 @@
+@import url("reset.css");
+
+
+
+body{
+  font-family: var(--mainFontFamily);
+  text-align: center;
+  background-color: var(--white);
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main{
+    flex-grow: 1;
+}
+
+
+ [class*="__container"]{
+    max-width: 84.375rem;
+	margin: 0 auto;
+    padding-inline: 0.9375rem;
+ }
+

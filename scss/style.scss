@@ -1,11 +1,26 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @import url("reset.css");
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_patterns.scss";
+@import "_header.scss";
+@import "_hero.scss";
+@import "_movies.scss";
+@import "_popular.scss";
+@import "_new_trending.scss";
+
+
+
 
 
 
 body{
-  font-family: var(--mainFontFamily);
+  font-family: "Manrope", sans-serif;
   text-align: center;
-  background-color: var(--white);
+  color: $mainTextColor;
+  background-color: $mainBgColor;
 }
 
 .wrapper{
@@ -14,16 +29,19 @@ body{
 
     display: flex;
     flex-direction: column;
-}
 
-.wrapper>main{
-    flex-grow: 1;
+    &>main{
+        flex-grow: 1;
+    }
 }
 
 
  [class*="__container"]{
-    max-width: 84.375rem;
+    max-width: toRem(1628);
 	margin: 0 auto;
     padding-inline: 0.9375rem;
  }
+
+
+
 

@@ -1,0 +1,26 @@
+.popular{
+    .card__img{
+        aspect-ratio: 141 / 121;
+    }
+
+    .card-list{
+        grid-template-columns: repeat(4, minmax(14.5rem, 1fr));
+    }
+} 
+
+.card{
+
+    &__box{
+        gap: toRem(4);
+    }
+
+    &__lable{
+        display: flex;
+        width: fit-content;
+        border-radius: toRem(5);
+        padding: toRem(10);
+        background: $mainRedColor;
+        font-weight: 600;
+        color: $mainTextColor;
+    }
+}

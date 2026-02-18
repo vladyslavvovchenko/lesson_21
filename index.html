@@ -9,9 +9,573 @@
 </head>
 <body>
     <div class="wrapper">
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="streamvibe logo">
+                    </a>
+
+                <nav class="menu-body">
+                    <ul class="menu">
+                        <li class="menu__list">
+                            <a class="menu__link" href="#">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link menu__link--active" href="#">Movies & Shows</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="#">Support</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="#">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#" class="header-actions__link">
+                        <img src="img/search.svg" alt="search">
+                    </a>
+                    <a href="#" class="header-actions__link">
+                        <img src="img/notification.svg" alt="notification">
+                    </a>
+                    <button class="button-mob icon-menu" type="button"><span></span></button>
+                </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__wrapper">
+                        <div class="hero__content">
+                            <div class="hero__box ">
+                                <h1 class="hero__title title">Avengers : Endgame</h1>
+                                <div class="hero__text text">
+                                    <p>With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</p>
+                                </div>
+                                <div class="hero__button-block">
+                                    <button type="button" class="play-now">Play Now</button>
+                                    <ul class="button-options">
+                                        <li class="button__item">
+                                            <button type="button" class="button-options__link">
+                                                <img src="img/plus.svg" alt="plus">
+                                            </button>
+                                        </li>
+                                        <li class="button__item">
+                                            <button type="button" class="button-options__link">
+                                                <img src="img/like.svg" alt="like">
+                                            </button>
+                                        </li>
+                                        <li class="button__item">
+                                            <button type="button" class="button-options__link">
+                                                <img src="img/volume.svg" alt="volume">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>     
+                            <div class="button-arrow arrow button-arrow--hero">
+                                <div class="arrow__wrapper arrow__wrapper--hero">
+                                    <img src="img/arrow-small.svg" alt="arrow">
+                                </div>
+                                <div class="arrow__list">
+                                    <div class="arrow__item arrow__item--active"></div>
+                                    <div class="arrow__item"></div>
+                                    <div class="arrow__item"></div>
+                                    <div class="arrow__item"></div>
+                                </div>
+                                <div class="arrow__wrapper arrow__wrapper--hero"">
+                                    <img src="img/arrow-small.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+
+            <div class="movies">
+                <div class="movies__container">
+                    <div class="movies__wrapper">
+                        <span class="movies__lable">Movies</span>
+                        <section class="our-genres">
+                            <div class="section-header">
+                                <h2 class="title">Our Genres</h2>
+                                <div class="button-arrow arrow button-arrow-none">
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                    <div class="arrow__list">
+                                        <div class="arrow__item arrow__item--active"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                    </div>
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <ul class="card-list card">
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/our-genres/1/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/1/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/1/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/1/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <h3 class="card__info">
+                                                Action
+                                            </h3>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/our-genres/2/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/2/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/2/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/2/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <h3 class="card__info">
+                                                Adventure
+                                            </h3>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/our-genres/3/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/3/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/3/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/3/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <h3 class="card__info">
+                                                Comedy
+                                            </h3>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/our-genres/4/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/4/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/4/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/4/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <h3 class="card__info">
+                                                Drama
+                                            </h3>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/our-genres/5/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/5/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/5/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/our-genres/5/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <h3 class="card__info">
+                                                Horror
+                                            </h3>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>           
+                            </ul>
+                            
+                        </section>
+
+                        <section class="popular">
+                            <div class="section-header">
+                                <h2 class="title">Popular Top 10 In Genres</h2>
+                                <div class="button-arrow arrow button-arrow-none">
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                    <div class="arrow__list">
+                                        <div class="arrow__item arrow__item--active"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                    </div>
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <ul class="card-list card">
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/top-10/1/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/1/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/1/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/1/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <div class="card__box">
+                                                <span class="card__lable">Top 10 In</span>
+                                                <h3 class="card__info">
+                                                    Action
+                                                </h3>
+                                            </div>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/top-10/2/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/2/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/2/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/2/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <div class="card__box">
+                                                <span class="card__lable">Top 10 In</span>
+                                                <h3 class="card__info">
+                                                    Action
+                                                </h3>
+                                            </div>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/top-10/3/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/3/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/3/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/3/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <div class="card__box">
+                                                <span class="card__lable">Top 10 In</span>
+                                                <h3 class="card__info">
+                                                    Action
+                                                </h3>
+                                            </div>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <ul class="card__content">
+                                            <li class="card__img">
+                                                <img src="img/top-10/4/Image-1.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/4/Image-2.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/4/Image-3.jpg" alt="movie">
+                                            </li>
+                                            <li class="card__img">
+                                                <img src="img/top-10/4/Image-4.jpg" alt="movie">
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="card__text">
+                                            <div class="card__box">
+                                                <span class="card__lable">Top 10 In</span>
+                                                <h3 class="card__info">
+                                                    Action
+                                                </h3>
+                                            </div>
+                                            <div class="card__arrow">
+                                                <img src="img/arrow-small.svg" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>   
+                            </ul>
+                        </section>
+
+                        <section class="trending">
+                            <div class="section-header">
+                                <h2 class="title">Trending Now</h2>
+                                <div class="button-arrow arrow button-arrow-none">
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                    <div class="arrow__list">
+                                        <div class="arrow__item arrow__item--active"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                    </div>
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <ul class="card-list card">
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <div class="card__big-img">
+                                            <img src="img/trending-now/Image-1.jpg" alt="movie">
+                                        </div>
+                                        <div class="card__time">
+                                            <span>1h 30min</span>
+                                            <span>2K</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/trending-now/Image-2.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__time">
+                                                <span>1h 57min</span>
+                                                <span>1.5K</span>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/trending-now/Image-3.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__time">
+                                                <span>2h 10min</span>
+                                                <span>1.8K</span>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/trending-now/Image-4.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__time">
+                                                <span>2h 20min</span>
+                                                <span>3K</span>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/trending-now/Image-5.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__time">
+                                                <span>1h 42min</span>
+                                                <span>5K</span>
+                                            </div>
+                                    </a>
+                                </li>    
+                            </ul>
+                        </section>
+
+                        <section class="new">
+                            <div class="section-header">
+                                <h2 class="title">New Releases</h2>
+                                <div class="button-arrow arrow button-arrow-none">
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                    <div class="arrow__list">
+                                        <div class="arrow__item arrow__item--active"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                        <div class="arrow__item"></div>
+                                    </div>
+                                    <div class="arrow__wrapper">
+                                        <img src="img/arrow-small.svg" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <ul class="card-list card">
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                        <div class="card__big-img">
+                                            <img src="img/new/Image-1.jpg" alt="movie">
+                                        </div>
+                                        <div class="card__calendar">
+                                            <p>
+                                                Released at <time datetime="2023-04-14">14 April 2023</time> 
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/new/Image-2.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__calendar">
+                                                <p>
+                                                    Released at <time datetime="2023-04-22">22 April 2023</time> 
+                                                </p>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/new/Image-3.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__calendar">
+                                                <p>
+                                                    Released at <time datetime="2023-04-13">13 April 2023</time> 
+                                                </p>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/new/Image-4.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__calendar">
+                                                <p>
+                                                    Released at <time datetime="2023-04-19">19 April 2023</time> 
+                                                </p>
+                                            </div>
+                                    </a>
+                                </li>
+                                <li class="card__item">
+                                    <a href="#" class="card__link">
+                                            <div class="card__big-img">
+                                                <img src="img/new/Image-5.jpg" alt="movie">
+                                            </div>
+                                            <div class="card__calendar">
+                                                <p>
+                                                    Released at <time datetime="2023-04-11">11 April 2023</time> 
+                                                </p>
+                                            </div>
+                                    </a>
+                                </li>    
+                            </ul>
+                            
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            
+        </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

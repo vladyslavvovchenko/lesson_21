@@ -1,0 +1,192 @@
+.hero {
+        padding-block: clamp(1.25rem, 0.791rem + 2.29vw, 3.125rem);
+    
+
+		// .hero__wrapper
+
+		&__wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+
+            border-radius: toRem(12);
+            overflow: hidden;
+            padding: toRem(20) clamp(0.938rem, 0.402rem + 2.68vw, 3.125rem);
+            position: relative;
+            background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%), url(../img/hero-icon.webp) center center / cover no-repeat;
+            min-height: 0;
+
+
+            &::before{
+                content: "";
+                display: block;
+                padding-top: 52%;
+            }
+            
+		}
+
+		// .hero__content
+
+		&__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		}
+
+        // .hero__box
+
+        &__box{
+            max-width: toRem(1194);
+        }
+
+		// .hero__title
+
+		&__title {
+            text-align: center;
+		}
+
+		// .hero__text
+
+		&__text {
+            font-size: clamp(0.875rem, 0.814rem + 0.31vw, 1.125rem);
+            margin-block-end: toRem(30);
+		}
+
+		// .hero__button-block
+
+		&__button-block {
+            display: flex;
+            justify-content: center;
+            gap: toRem(20);
+            margin-block-end: toRem(50);
+
+            @media(max-width: toEm(767.98)){
+                flex-direction: column;
+                align-items: center;
+            }
+		}
+}
+.play-now {
+    display: flex;
+    align-items: center;
+    gap: toRem(4);
+    padding: toRem(14) toRem(24);
+    background-color: $mainRedColor;
+    border-radius: toRem(8);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.53;
+    color: $mainTextColor;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+
+     @media(max-width: toEm(767.98)){
+                width: fit-content;
+            }
+
+    &::before{
+        content: "";
+        width: toRem(28);
+        height: toRem(28);
+        background: url(../img/play-arrow.svg) center center / contain no-repeat;
+    }
+
+    @media (any-hover:hover){
+        &:hover{
+            top: 0.25rem;
+            box-shadow: 0.25rem -0.25rem 1.25rem $mainRedColor;
+        }
+    }
+}
+
+
+.button-options {
+        display: flex;
+        gap: toRem(10);
+
+		// .button-options__link
+
+		&__link {
+            padding: toRem(14);
+            border: toRem(1) solid  #262626;
+            border-radius: toRem(8);
+            background: $mainBlackColor;
+            aspect-ratio: 28 / 28;
+            transition: 0.3s;
+
+            & img{
+                @extend %img-contain;
+            }
+
+            @media (any-hover:hover){
+                &:hover{
+                    border: toRem(1) solid  $mainWhiteColor;
+                }
+            }
+		}
+}
+
+
+.button-arrow {
+    display: flex;
+    width: fit-content;
+    gap: toRem(16);
+    background-color: $mainBlackColor;
+    border: toRem(1) solid #1f1f1f;
+    border-radius: toRem(12);
+    padding: toRem(16);
+
+    &--hero{
+        background-color: transparent;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+}
+.arrow {
+
+		// .arrow__wrapper
+
+		&__wrapper {
+            background-color: $mainGrayColor;
+            border: toRem(1) solid #1f1f1f;
+            border-radius: toRem(8);
+            padding: toRem(14);
+
+            &:first-child{
+                transform: rotate(180deg);
+            }
+
+            &--hero{
+                background-color: $mainBlackColor;
+            }
+		}
+
+		// .arrow__list
+
+		&__list {
+            display: flex;
+            align-items: center;
+            gap: toRem(3);
+		}
+
+		// .arrow__item
+
+		&__item {
+            border-radius: toRem(100);
+            width: toRem(16);
+            height: toRem(4);
+            background-color: #333;
+
+            &--active{
+                border-radius: toRem(100);
+                width: toRem(23);
+                height: toRem(4);
+                background-color: $mainRedColor;
+            }
+		}
+}

@@ -669,7 +669,7 @@
 }
 
 .new .card-list, .trending .card-list {
-  grid-template-columns: repeat(5, minmax(11.3125rem, 1fr));
+  grid-template-columns: repeat(5, minmax(13.125rem, 1fr));
 }
 .new .card__link, .trending .card__link {
   padding: 1.25rem;
@@ -716,7 +716,17 @@
   color: #999;
   background: #141414;
 }
-@media (max-width: 92.5em) {
+@media (min-width: 103.625em) {
+  .new .card__calendar, .trending .card__calendar {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 103.625em) {
+  .new .card__calendar, .trending .card__calendar {
+    font-size: clamp( 0.75rem , 0.6902092676rem  +  0.2989536622vw , 1rem );
+  }
+}
+@media (max-width: 20em) {
   .new .card__calendar, .trending .card__calendar {
     font-size: 0.75rem;
   }

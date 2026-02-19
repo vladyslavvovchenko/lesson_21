@@ -4,7 +4,7 @@
     .card{
 
         &-list{
-           grid-template-columns: repeat(5, minmax(11.3125rem, 1fr));
+           grid-template-columns: repeat(5, minmax(13.125rem, 1fr));
 
         }
 
@@ -44,10 +44,11 @@
                 font-weight: 500;
                 color: #999;
                 background: $mainBgColor;
+                @include adaptiveValue("font-size", 16, 12);
 
-                @media (max-width: toEm(1480)) {
-                    font-size: toRem(12);
-                }
+                // @media (max-width: toEm(1480)) {
+                //     font-size: toRem(12);
+                // }
             }
     }
 }

@@ -1,5 +1,5 @@
 .hero {
-        padding-block: clamp(1.25rem, 0.791rem + 2.29vw, 3.125rem);
+        padding-block: clamp(0rem, -1.136rem + 5.68vw, 3.125rem);
     
 
 		// .hero__wrapper
@@ -8,21 +8,10 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-
-
-            border-radius: toRem(12);
-            overflow: hidden;
-            padding: toRem(20) clamp(0.938rem, 0.402rem + 2.68vw, 3.125rem);
+            padding-inline: toRem(16);
+            padding-block: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
             position: relative;
-            background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%), url(../img/hero-icon.webp) center center / cover no-repeat;
-            min-height: 0;
-
-
-            &::before{
-                content: "";
-                display: block;
-                padding-top: 52%;
-            }
+            min-height: 100svh;
             
 		}
 
@@ -33,12 +22,44 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: clamp(17.25rem, 11.977rem + 26.36vw, 31.75rem);
 		}
 
         // .hero__box
 
         &__box{
             max-width: toRem(1194);
+        }
+
+        // .hero__background
+
+        &__background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            aspect-ratio: 1594 / 835;
+            border-radius: toRem(12);
+            overflow: hidden;
+        }
+
+        &__background::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+            
+        }
+
+        &__background img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
 
 		// .hero__title
@@ -60,7 +81,7 @@
             display: flex;
             justify-content: center;
             gap: toRem(20);
-            margin-block-end: toRem(50);
+            margin-block-end: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
 
             @media(max-width: toEm(767.98)){
                 flex-direction: column;

@@ -1,6 +1,7 @@
 
 .movies{
     padding-block: clamp(1.875rem, 0.04rem + 9.17vw, 9.375rem);
+    position: relative;
 
     &__wrapper{
         border: toRem(1) solid #262626;

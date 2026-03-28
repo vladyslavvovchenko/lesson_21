@@ -14,6 +14,10 @@
         align-items: center;
         grid-template-columns: auto 1fr auto;
         gap: toRem(20);
+
+        @media(max-width: toEm(475)){
+         grid-template-columns: auto 1fr;
+    }
     }
 
     // .header__logo
@@ -22,6 +26,10 @@
         position: relative;
         z-index: 5;
         aspect-ratio: 199 / 60;
+
+           @media(max-width: toEm(475)){
+         max-width: 131px;
+    }
     }
     
     &__logo img{
@@ -139,12 +147,11 @@
     position: relative;
     z-index: 5;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     column-gap: toRem(6);
 
-    @media(max-width: toEm(430)){
-        column-gap: toRem(15);
-    }
+    
 
     &__link{
             background-color: transparent;
@@ -152,6 +159,10 @@
             border: toEm(4) solid transparent;
             border-radius: toEm(8);
             padding: 12px;
+
+        @media(max-width: toEm(475)){
+         padding: 0;
+    }
 
         @media (any-hover: hover){
             &:hover{
@@ -162,6 +173,8 @@
             }
         }
     }
+
+    
 }
 
 
@@ -176,6 +189,9 @@
     display: none;
     flex-direction: column;
 
+    @media(max-width: toEm(475)){
+        flex-basis: toRem(43);
+    }
 
     /* border: 3px solid  #111b47; */
     /* border-radius: 6px; */
